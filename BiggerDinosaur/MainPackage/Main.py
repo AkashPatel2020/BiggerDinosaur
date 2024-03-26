@@ -10,19 +10,23 @@
 from MainPackage.StoreData import * 
 
 if __name__ == "__main__":
-    # Instantiate an object of type Data
-    myData = Data
+    # Instantiate the object types 
+    myState = state
+    myStore = store
+    myStoreHistory = storeHistory
     # Invoke the Connect method and store what it returns in another variable 
-    myCursor = myData.Connect("GroceryStoreSimulator") #database 
-    
-    # my work to join tables 
-    myCursor.executecursor.execute("""
+    myCursor = myState.Connect("GroceryStoreSimulator") #database 
+    myCursor = myStore.Connect("GroceryStoreSimulator") #database 
+    myCursor = myStoreHistory.Connect("GroceryStoreSimulator") 
+    # Submit query to SQL server and join tables 
+    myCursor.execute("""
                                     SELECT S.city, St.stateAbbreviation, S.store, SH.storeID
                                     FROM dbo.tState St 
                                     INNER JOIN dbo.tStore S ON St.stateAbbreviation = S.store
                                     INNER JOIN dbo.tStoreHistory SH ON S.state = SH.storeID
                                     WHERE St.stateAbbreviation = 'OH'
                                 """)
+    print("All Grocery Stores in Ohio: " + str())
     
     
     
