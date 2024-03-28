@@ -1,5 +1,5 @@
 #storeData.py
-# Name: Brianna Jarrell
+# Name: Bigger Dinosaur Brianna Jarrell, Maddie, Akash 
 # email: jarrelbc@mail.uc.edu
 # Assignment Number: Assignment 08
 # Date: 3-28-24
@@ -7,7 +7,8 @@
 # Semester/Year: Spring 2024
 # Brief Description of the assignment:
 # Citations:
-# Anything else that's relevant:
+# Anything else that's relevant:We are pulling code from the SQL file and getting data it
+  
 
 import pyodbc
 

@@ -1,11 +1,11 @@
 #main.py
-# Name: Brianna Jarrell
+# Name: Bigger Dinosaur Brianna Jarrell, Maddie, Akash 
 # email: jarrelbc@mail.uc.edu
 # Assignment Number: Assignment 08
 # Date: 3-28-24
 # Course/Section:IS 4010-002
 # Semester/Year: Spring 2024
-# Brief Description of the assignment:
+# Brief Description of the assignment: We are pulling code from the SQL file and getting data it
   
 from MainPackage.StoreData import * 
 
